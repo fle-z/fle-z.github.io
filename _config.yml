@@ -1,11 +1,11 @@
-# Hexo Configuration
+ï»¿# Hexo Configuration
 ## Docs: https://hexo.io/docs/configuration.html
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: fleµÄ¶ş¶È¿Õ¼ä
-subtitle: Ò»Ö»ĞĞ×ß»¥ÁªÍøÂ·ÉÏµÄ²ËÄñ
-description: ÉæÁÔµÄÖ÷Òª±à³ÌÓïÑÔÎª Python¡¢Java¡¢Go£¬ÁìÓòº­¸Ç·şÎñÑĞ·¢¡¢´óÊı¾İµÈ¡£
+title: fleçš„äºŒåº¦ç©ºé—´
+subtitle: ä¸€åªè¡Œèµ°äº’è”ç½‘è·¯ä¸Šçš„èœé¸Ÿ
+description: æ¶‰çŒçš„ä¸»è¦ç¼–ç¨‹è¯­è¨€ä¸º Pythonã€Javaã€Goï¼Œé¢†åŸŸæ¶µç›–æœåŠ¡ç ”å‘ã€å¤§æ•°æ®ç­‰ã€‚
 keywords:
 author: fle
 language: zh-CN
@@ -90,7 +90,7 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: next
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
@@ -98,3 +98,10 @@ deploy:
   type: git
   repo: git@github.com:fle-z/fle-z.github.io.git
   branch: master
+
+  
+search:
+  path: search.xml
+  field: post
+  format: html
+  limit: 10000
