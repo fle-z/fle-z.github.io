@@ -51,18 +51,20 @@
   };
 </script>
 
-  <meta name="description" content="闭包实现斐波那契数列">
+  <meta name="description" content="打印200以内素数程序及详解">
 <meta name="keywords" content="go基础">
 <meta property="og:type" content="article">
-<meta property="og:title" content="go联系：使用闭包实现打印斐波那契数列">
-<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;03&#x2F;go%E4%BD%BF%E7%94%A8%E9%97%AD%E5%8C%85%E5%AE%9E%E7%8E%B0%E6%89%93%E5%8D%B0%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91%E6%95%B0%E5%88%97&#x2F;index.html">
+<meta property="og:title" content="go打印200以内素数程序详解">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;21&#x2F;go%E6%89%93%E5%8D%B0200%E4%BB%A5%E5%86%85%E7%B4%A0%E6%95%B0%E7%A8%8B%E5%BA%8F%E8%AF%A6%E8%A7%A3&#x2F;index.html">
 <meta property="og:site_name" content="fle的二度空间">
-<meta property="og:description" content="闭包实现斐波那契数列">
+<meta property="og:description" content="打印200以内素数程序及详解">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-11-21T07:13:06.146Z">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;21&#x2F;go%E6%89%93%E5%8D%B0200%E4%BB%A5%E5%86%85%E7%B4%A0%E6%95%B0%E7%A8%8B%E5%BA%8F%E8%AF%A6%E8%A7%A3&#x2F;go%E6%89%93%E5%8D%B0%E7%B4%A0%E6%95%B0.png">
+<meta property="og:updated_time" content="2019-11-21T07:24:42.496Z">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;21&#x2F;go%E6%89%93%E5%8D%B0200%E4%BB%A5%E5%86%85%E7%B4%A0%E6%95%B0%E7%A8%8B%E5%BA%8F%E8%AF%A6%E8%A7%A3&#x2F;go%E6%89%93%E5%8D%B0%E7%B4%A0%E6%95%B0.png">
 
-<link rel="canonical" href="http://yoursite.com/2019/11/03/go%E4%BD%BF%E7%94%A8%E9%97%AD%E5%8C%85%E5%AE%9E%E7%8E%B0%E6%89%93%E5%8D%B0%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91%E6%95%B0%E5%88%97/">
+<link rel="canonical" href="http://yoursite.com/2019/11/21/go%E6%89%93%E5%8D%B0200%E4%BB%A5%E5%86%85%E7%B4%A0%E6%95%B0%E7%A8%8B%E5%BA%8F%E8%AF%A6%E8%A7%A3/">
 
 
 <script id="page-configurations">
@@ -76,7 +78,7 @@
   };
 </script>
 
-  <title>go联系：使用闭包实现打印斐波那契数列 | fle的二度空间</title>
+  <title>go打印200以内素数程序详解 | fle的二度空间</title>
   
 
 
@@ -212,7 +214,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/11/03/go%E4%BD%BF%E7%94%A8%E9%97%AD%E5%8C%85%E5%AE%9E%E7%8E%B0%E6%89%93%E5%8D%B0%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91%E6%95%B0%E5%88%97/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/11/21/go%E6%89%93%E5%8D%B0200%E4%BB%A5%E5%86%85%E7%B4%A0%E6%95%B0%E7%A8%8B%E5%BA%8F%E8%AF%A6%E8%A7%A3/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/ava.jpg">
@@ -225,7 +227,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          go联系：使用闭包实现打印斐波那契数列
+          go打印200以内素数程序详解
         </h1>
 
         <div class="post-meta">
@@ -234,16 +236,10 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
+              
 
-              <time title="创建时间：2019-11-03 15:22:51" itemprop="dateCreated datePublished" datetime="2019-11-03T15:22:51+08:00">2019-11-03</time>
+              <time title="创建时间：2019-11-21 15:17:01 / 修改时间：15:24:42" itemprop="dateCreated datePublished" datetime="2019-11-21T15:17:01+08:00">2019-11-21</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2019-11-21 15:13:06" itemprop="dateModified" datetime="2019-11-21T15:13:06+08:00">2019-11-21</time>
-              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
@@ -267,10 +263,14 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>闭包实现斐波那契数列</p>
+        <p>打印200以内素数程序及详解</p>
 <a id="more"></a>
 
-<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> main</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> <span class="string">"fmt"</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// fibonacci 函数会返回一个返回 int 的函数。</span></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">fibonacci</span><span class="params">()</span> <span class="title">func</span><span class="params">()</span> <span class="title">int</span></span> &#123;</span><br><span class="line">    curVal, postVal := <span class="number">0</span>, <span class="number">1</span></span><br><span class="line">    fun := <span class="function"><span class="keyword">func</span><span class="params">()</span> <span class="title">int</span></span>&#123;</span><br><span class="line">        curVal, postVal = postVal, curVal+postVal</span><br><span class="line">        <span class="keyword">return</span> curVal</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> fun</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">main</span><span class="params">()</span></span> &#123;</span><br><span class="line">    f := fibonacci()</span><br><span class="line">    <span class="keyword">for</span> i := <span class="number">0</span>; i &lt; <span class="number">10</span>; i++ &#123;</span><br><span class="line">        fmt.Println(f())</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> main</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> (</span><br><span class="line">	<span class="string">"fmt"</span></span><br><span class="line">)</span><br><span class="line"></span><br><span class="line"><span class="comment">// Send the sequence 2, 3, 4, ... to returned channel</span></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">generate</span><span class="params">()</span> <span class="title">chan</span> <span class="title">int</span></span> &#123;</span><br><span class="line">	ch := <span class="built_in">make</span>(<span class="keyword">chan</span> <span class="keyword">int</span>)</span><br><span class="line">	<span class="keyword">go</span> <span class="function"><span class="keyword">func</span><span class="params">()</span></span> &#123;</span><br><span class="line">		<span class="keyword">for</span> i := <span class="number">2</span>; ; i++ &#123;</span><br><span class="line">			ch &lt;- i</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;()</span><br><span class="line">	<span class="keyword">return</span> ch</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// Filter out input values divisible by 'prime', send rest to returned channel</span></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">filter</span><span class="params">(in <span class="keyword">chan</span> <span class="keyword">int</span>, prime <span class="keyword">int</span>)</span> <span class="title">chan</span> <span class="title">int</span></span> &#123;</span><br><span class="line">	out := <span class="built_in">make</span>(<span class="keyword">chan</span> <span class="keyword">int</span>)</span><br><span class="line">	<span class="keyword">go</span> <span class="function"><span class="keyword">func</span><span class="params">()</span></span> &#123;</span><br><span class="line">		<span class="comment">// 这里接收通过上一个素数判断后的数</span></span><br><span class="line">		<span class="keyword">for</span> &#123;</span><br><span class="line">			i := &lt;-in</span><br><span class="line">			fmt.Printf(<span class="string">"the new number is %d, the prime is %d \n"</span>, i, prime)</span><br><span class="line">			<span class="keyword">if</span> i%prime != <span class="number">0</span> &#123;</span><br><span class="line">				out &lt;- i</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;()</span><br><span class="line">	<span class="keyword">return</span> out</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">sieve</span><span class="params">()</span> <span class="title">chan</span> <span class="title">int</span></span> &#123;</span><br><span class="line">	out := <span class="built_in">make</span>(<span class="keyword">chan</span> <span class="keyword">int</span>)</span><br><span class="line">	<span class="comment">// 这里每一个循环产生一个素数，并相当于对每个素数绑定一个通道</span></span><br><span class="line">	<span class="comment">// 以后每产生一个素数，都需要在所有素数的通道走一遍，也就是filter里的for循环</span></span><br><span class="line">	<span class="keyword">go</span> <span class="function"><span class="keyword">func</span><span class="params">()</span></span> &#123;</span><br><span class="line">		ch := generate()</span><br><span class="line">		<span class="keyword">for</span> &#123;</span><br><span class="line">			prime := &lt;-ch</span><br><span class="line">			fmt.Printf(<span class="string">"the prime is %d \n"</span>, prime)</span><br><span class="line">			ch = filter(ch, prime)</span><br><span class="line">			out &lt;- prime</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;()</span><br><span class="line">	<span class="keyword">return</span> out</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">main</span><span class="params">()</span></span> &#123;</span><br><span class="line">	primes := sieve()</span><br><span class="line">	<span class="keyword">for</span> &#123;</span><br><span class="line">		res := &lt;-primes</span><br><span class="line">		<span class="keyword">if</span> res &gt; <span class="number">200</span> &#123;</span><br><span class="line">			<span class="keyword">break</span></span><br><span class="line">		&#125;</span><br><span class="line">		fmt.Println(res)</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>程序运行结果<br><img src="./go%E6%89%93%E5%8D%B0%E7%B4%A0%E6%95%B0.png" alt=""></p>
+
     </div>
 
     
@@ -286,17 +286,14 @@
 
           <div class="post-nav">
             <div class="post-nav-next post-nav-item">
-                <a href="/2019/11/03/hello-world/" rel="next" title="Hello World">
-                  <i class="fa fa-chevron-left"></i> Hello World
+                <a href="/2019/11/03/go%E4%BD%BF%E7%94%A8%E9%97%AD%E5%8C%85%E5%AE%9E%E7%8E%B0%E6%89%93%E5%8D%B0%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91%E6%95%B0%E5%88%97/" rel="next" title="go联系：使用闭包实现打印斐波那契数列">
+                  <i class="fa fa-chevron-left"></i> go联系：使用闭包实现打印斐波那契数列
                 </a>
             </div>
 
             <span class="post-nav-divider"></span>
 
             <div class="post-nav-prev post-nav-item">
-                <a href="/2019/11/21/go%E6%89%93%E5%8D%B0200%E4%BB%A5%E5%86%85%E7%B4%A0%E6%95%B0%E7%A8%8B%E5%BA%8F%E8%AF%A6%E8%A7%A3/" rel="prev" title="go打印200以内素数程序详解">
-                  go打印200以内素数程序详解 <i class="fa fa-chevron-right"></i>
-                </a>
             </div>
           </div>
       </footer>
@@ -464,7 +461,7 @@
       repo: 'fle-z.github.io',
       owner: 'fle-z',
       admin: ['fle-z'],
-      id: 'e56914cb4491d5564a4a10c6ff59c227',
+      id: 'a2760d60f7c00e41573894b66733d3fc',
         language: 'zh-CN',
       distractionFreeMode: 'true'
     });
